@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Anytime is Train Time</h1>
+        <p><h4>CHOO CHOO. CHEE CHEE.</h4></p>
+    </div>
+   <div class="results">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">Current Train Schedule</div>
+            </div>
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency (min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                    </table>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+
+                <div class="panel-title">Add Train</div>
+            </div>
+
+
+
+            <div class="panel-body">
+                <!-- Will need to create form -->
+                <form>
+                    <div class="form-group">
+                        <label for="searchTerm">Train Name</label>
+                        <input type="text" class="form-control" id="trainName" placeholder="Thomas the Tank Engine">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTerm">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Funky Town">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTerm">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="firstTime" placeholder="00:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTerm">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency" placeholder=" ">
+                    </div>
+                    
+                    <button type="button" id="addTrain" class="btn btn-info">Submit</button>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+</body>
+
+</html>
